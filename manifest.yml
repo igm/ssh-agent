@@ -1,0 +1,8 @@
+applications:
+- name: ssh-agent-demo
+  memory: 512M
+  instances: 1
+  subdomain: sshagent-${random-word}
+  domain: cfapps.io
+  buildpack: https://github.com/igm/noop-buildpack
+
